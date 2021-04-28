@@ -76,7 +76,6 @@ mode_t GetPermBits(const fs::path& path, uid_t uid, gid_t gid) {
 }
 
 bool IsDirectoryResolvable(fs::path dir, uid_t uid, gid_t gid) {
-  /* dir = fs::canonical(dir); */
   while (dir.has_relative_path()) {
     std::cout << dir << std::endl;
     if (!(GetPermBits(dir, uid, gid) & 01)) {
