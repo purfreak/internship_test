@@ -6,7 +6,7 @@
 ### run:
 ```
 clang++ -std=c++17 internship_test.cpp
-./a.out directory username groupname
+./a.out username groupname directory
 ```
 
 #### Выполнено Ташей Саковец.
