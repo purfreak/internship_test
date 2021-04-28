@@ -5,7 +5,7 @@
 
 ### run:
 ```
-clang++ -std=c++14 internship_test.cpp
+clang++ -std=c++17 internship_test.cpp
 ./a.out directory username groupname
 ```
 
