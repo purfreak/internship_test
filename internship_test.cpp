@@ -83,7 +83,7 @@ bool IsDirectoryResolvable(fs::path dir, uid_t uid, gid_t gid) {
     }
     dir = dir.parent_path();
   }
-  return GetPermBits(dir, uid, gid) & 01; /* check root */
+  return GetPermBits(dir, uid, gid) & 01;
 }
 
 void FindWritableFiles(const fs::path& path, uid_t uid, gid_t gid) {
@@ -118,6 +118,7 @@ uid_t GetUserID(const char* name) {
   } else {
     FatalErrno("can not get user record");
   }
+  return 0;
 }
 
 gid_t GetGroupID(const char* name) {
@@ -131,4 +132,5 @@ gid_t GetGroupID(const char* name) {
   } else {
     FatalErrno("can not get group record");
   }
+  return 0;
 }
