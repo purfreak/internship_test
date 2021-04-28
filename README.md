@@ -10,3 +10,5 @@ clang++ -std=c++17 internship_test.cpp
 ```
 
 #### Выполнено Ташей Саковец.
+
+#### Lisence MIT.
